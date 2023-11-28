@@ -11,6 +11,7 @@ import AffichagePosition from './cours/05-hooks/02-custom-hook';
 import Binding from './cours/06-evenement/01-evenement';
 import {Message} from './cours/07-rendu-conditionnel/01-conditionnel'
 import Calculatrice from './exercices/02-calculatrices';
+import ControlledForm from './cours/08-formulaires/01-formulaires-controles';
 
 function App() {
   return (
@@ -28,7 +29,8 @@ function App() {
     {/* <AffichagePosition></AffichagePosition> */}
     {/* <Binding></Binding> */}
     {/* <Message estConnecte={true}></Message> */}
-    <Calculatrice></Calculatrice>
+    {/* <Calculatrice></Calculatrice> */}
+    <ControlledForm></ControlledForm>
     </div>
   );
 }
