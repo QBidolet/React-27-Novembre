@@ -8,6 +8,8 @@ import Notes from './exercices/01-notes';
 import CycleDeVie from './cours/04-state/02-cycle-de-vie';
 import DemoUseEffect from './cours/05-hooks/01-useeffect';
 import AffichagePosition from './cours/05-hooks/02-custom-hook';
+import Binding from './cours/06-evenement/01-evenement';
+import {Message} from './cours/07-rendu-conditionnel/01-conditionnel'
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
     {/* <Notes></Notes> */}
     {/* <CycleDeVie></CycleDeVie> */}
     {/* <DemoUseEffect></DemoUseEffect> */}
-    <AffichagePosition></AffichagePosition>
+    {/* <AffichagePosition></AffichagePosition> */}
+    {/* <Binding></Binding> */}
+    <Message estConnecte={true}></Message>
     </div>
   );
 }
