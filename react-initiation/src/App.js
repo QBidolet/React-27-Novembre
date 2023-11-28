@@ -12,6 +12,7 @@ import Binding from './cours/06-evenement/01-evenement';
 import {Message} from './cours/07-rendu-conditionnel/01-conditionnel'
 import Calculatrice from './exercices/02-calculatrices';
 import ControlledForm from './cours/08-formulaires/01-formulaires-controles';
+import UncontrolledForm from './cours/08-formulaires/02-formulaires-non-controlle';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
     {/* <Binding></Binding> */}
     {/* <Message estConnecte={true}></Message> */}
     {/* <Calculatrice></Calculatrice> */}
-    <ControlledForm></ControlledForm>
+    {/* <ControlledForm></ControlledForm> */}
+    <UncontrolledForm></UncontrolledForm>
     </div>
   );
 }

@@ -5,10 +5,10 @@ function ControlledForm(){
 
     const handleInputValueChange = (event)=> {
         const value = event.target.value;
-        setInputValue(event.target.value);
+        setInputValue(value);
         
     }
-
+    
     const handleSubmit = (event) => {
         event.preventDefault();
         alert("Formulaire soumis : " + inputValue);
@@ -18,7 +18,7 @@ function ControlledForm(){
         <form onSubmit={handleSubmit}>
             <label>
                 Nom :
-                <input type="text" value={inputValue} onChange={handleInputValueChange}></input>
+                <input type="text" value={inputValue} onChange={(handleInputValueChange)}></input>
                 <input type="submit" value="Envoyer"></input>
             </label>
         </form>
