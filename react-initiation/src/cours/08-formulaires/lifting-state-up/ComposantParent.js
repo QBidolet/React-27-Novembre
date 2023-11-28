@@ -12,6 +12,7 @@ const ComposantParent = () => {
     return(
         <div>
             <ComposantA valeur={valeurPartagee} setValeur={handleValueChange}></ComposantA>
+            <ComposantB valeur={valeurPartagee} setValeur={handleValueChange}></ComposantB>
         </div>
     )
 }
