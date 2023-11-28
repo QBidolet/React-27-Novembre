@@ -4,6 +4,7 @@ import './App.css';
 import MonComposant from './cours/02-react/03-composant-fonction';
 import Props, {Compteur, Salutation, Wrapper} from './cours/03-props/01-props';
 import Compteurs from './cours/04-state/01-state';
+import Notes from './exercices/01-notes';
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
     <Wrapper>
       <p>Ceci est un contenu enfant.</p>
     </Wrapper> */}
-    <Compteurs></Compteurs>
+    {/* <Compteurs></Compteurs> */}
+    <Notes></Notes>
     </div>
   );
 }
