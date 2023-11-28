@@ -7,6 +7,7 @@ import Compteurs from './cours/04-state/01-state';
 import Notes from './exercices/01-notes';
 import CycleDeVie from './cours/04-state/02-cycle-de-vie';
 import DemoUseEffect from './cours/05-hooks/01-useeffect';
+import AffichagePosition from './cours/05-hooks/02-custom-hook';
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
     {/* <Compteurs></Compteurs> */}
     {/* <Notes></Notes> */}
     {/* <CycleDeVie></CycleDeVie> */}
-    <DemoUseEffect></DemoUseEffect>
+    {/* <DemoUseEffect></DemoUseEffect> */}
+    <AffichagePosition></AffichagePosition>
     </div>
   );
 }
