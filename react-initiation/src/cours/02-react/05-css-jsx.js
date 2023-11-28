@@ -1,7 +1,6 @@
 import './Button.css';
 
 // CSS dans le JSX
-
 // ...
 return (
     <div>
