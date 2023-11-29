@@ -28,7 +28,7 @@ class Todo extends Component{
 
     toggleTask(index){
         const updatedTasks = this.state.tasks.map((task, i)=>{
-            if(i == index){
+            if(i === index){
                 task.completed = !task.completed;
             }
             return task;

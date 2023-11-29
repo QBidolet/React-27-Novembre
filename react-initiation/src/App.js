@@ -14,6 +14,8 @@ import Calculatrice from './exercices/02-calculatrices';
 import ControlledForm from './cours/08-formulaires/01-formulaires-controles';
 import UncontrolledForm from './cours/08-formulaires/02-formulaires-non-controlle';
 import Todo from './exercices/TODO/Todo';
+import ReactRouter from './cours/09-react-router/01-react-router-dom';
+import Liste from './cours/10-redux/hoc/Liste';
 
 function App() {
   return (
@@ -34,7 +36,9 @@ function App() {
     {/* <Calculatrice></Calculatrice> */}
     {/* <ControlledForm></ControlledForm> */}
     {/* <UncontrolledForm></UncontrolledForm> */}
-    <Todo></Todo>
+    {/* <Todo></Todo> */}
+    {/* <ReactRouter></ReactRouter> */}
+    <Liste></Liste>
     </div>
   );
 }
