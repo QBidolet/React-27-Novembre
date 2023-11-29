@@ -13,6 +13,7 @@ import {Message} from './cours/07-rendu-conditionnel/01-conditionnel'
 import Calculatrice from './exercices/02-calculatrices';
 import ControlledForm from './cours/08-formulaires/01-formulaires-controles';
 import UncontrolledForm from './cours/08-formulaires/02-formulaires-non-controlle';
+import Todo from './exercices/TODO/Todo';
 
 function App() {
   return (
@@ -32,7 +33,8 @@ function App() {
     {/* <Message estConnecte={true}></Message> */}
     {/* <Calculatrice></Calculatrice> */}
     {/* <ControlledForm></ControlledForm> */}
-    <UncontrolledForm></UncontrolledForm>
+    {/* <UncontrolledForm></UncontrolledForm> */}
+    <Todo></Todo>
     </div>
   );
 }

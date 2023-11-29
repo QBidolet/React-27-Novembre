@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import Task from "./Task";
 
 class TaskList extends Component{
     render(){
@@ -7,7 +8,11 @@ class TaskList extends Component{
             <ul>
                 {
                     tasks.map((task, index)=>
-                    <Task key={index} task={task}></Task>
+                    <Task key={index} 
+                    index={index} 
+                    task={task} 
+                    toggleTask={toggleTask}
+                    deleteTask={deleteTask}></Task>
                 )}
             </ul>
         )

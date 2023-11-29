@@ -6,16 +6,18 @@
 
 // 
 import React, {Component} from "react";
+import TaskList from "./TaskList";
+import TaskForm from "./TaskForm";
 
 class Todo extends Component{
     constructor(props){
         super(props);
         this.state = {
-            tasks: [
-                {text: "Faire le TP", completed: false},
-                {text: "Faire les courses", completed: true}
-            ]
+            tasks: []
         }
+        this.toggleTask = this.toggleTask.bind(this);
+        this.deleteTask = this.deleteTask.bind(this);
+        this.addTask = this.addTask.bind(this);
     }
 
     addTask(task){
@@ -23,13 +25,30 @@ class Todo extends Component{
         // A ne pas faire
         //this.state.tasks.append(task);
     }
+
+    toggleTask(index){
+        const updatedTasks = this.state.tasks.map((task, i)=>{
+            if(i == index){
+                task.completed = !task.completed;
+            }
+            return task;
+        })
+
+        this.setState({tasks: updatedTasks});
+    }
+
+    deleteTask(index){
+        const updatedTasks = this.state.tasks.filter((task, i)=> i !== index);
+        this.setState({tasks: updatedTasks});
+    }
+
     render() {
         return(
             <div>
                 <TaskList tasks={this.state.tasks} 
                 toggleTask={this.toggleTask} 
-                deleteTask={this.deleteTask}></TaskList>
-                <TaskForm addTask={this.addTask}></TaskForm>
+                deleteTask={this.deleteTask}/>
+                <TaskForm addTask={this.addTask}/>
             </div>
         )
     }
