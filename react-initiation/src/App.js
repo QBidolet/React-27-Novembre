@@ -16,29 +16,18 @@ import UncontrolledForm from './cours/08-formulaires/02-formulaires-non-controll
 import Todo from './exercices/TODO/Todo';
 import ReactRouter from './cours/09-react-router/01-react-router-dom';
 import Liste from './cours/10-redux/hoc/Liste';
+import Counter from './cours/10-redux/redux-toolkit/Counter';
+import { Provider } from 'react-redux';
+import {store} from './cours/10-redux/redux-toolkit/store';
 
 function App() {
   return (
     <div className="App">
-    {/* <MonComposant/>  */}
-    {/* <Props></Props>
-    <Salutation nom="Quentin" age={29}></Salutation>
-    <Wrapper>
-      <p>Ceci est un contenu enfant.</p>
-    </Wrapper> */}
-    {/* <Compteurs></Compteurs> */}
-    {/* <Notes></Notes> */}
-    {/* <CycleDeVie></CycleDeVie> */}
-    {/* <DemoUseEffect></DemoUseEffect> */}
-    {/* <AffichagePosition></AffichagePosition> */}
-    {/* <Binding></Binding> */}
-    {/* <Message estConnecte={true}></Message> */}
-    {/* <Calculatrice></Calculatrice> */}
-    {/* <ControlledForm></ControlledForm> */}
-    {/* <UncontrolledForm></UncontrolledForm> */}
-    {/* <Todo></Todo> */}
-    {/* <ReactRouter></ReactRouter> */}
-    <Liste></Liste>
+    <Provider store={store}>
+    
+    
+      <Auth></Auth>
+    </Provider>
     </div>
   );
 }
